@@ -39,12 +39,12 @@
 		function loadGLTF() {
 			let balloonLoader = new THREE.GLTFLoader();
 
-			balloonLoader.load('./models/scene.gltf', (gltf) => {
+			balloonLoader.load('./models/ish.glb', (gltf) => {
 				Mesh = gltf.scene;
-				Mesh.scale.set(5, 5, 5);
+				Mesh.scale.set(7, 7, 7);
 				scene.add(Mesh);
 				Mesh.position.x = 0;
-				Mesh.position.y = 10;
+				Mesh.position.y = 6;
 				Mesh.position.z = 15;
 			});
 		}
